@@ -323,6 +323,15 @@ h1{
 
 }
 
+.retangle .btn-c:active{
+    box-shadow: inset rgb(0, 0, 0) 0px 4px 4px 1px, inset -5px -4px 5px 0.1px rgb(29, 29, 29),
+     rgb(15, 15, 15) 0px 4px 4px 0.2px;
+}
+
+.retangle .btn-c:active img{
+    transform: scale(0.95);
+}
+
 .retangle .btn-c{
     bottom: 7.5px;
     height: 50px;
@@ -334,15 +343,9 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-
-    box-shadow: inset rgb(0, 0, 0) 0px 8px 4px 1px, inset -5px -4px 5px 0.1px rgb(29, 29, 29),
-     rgb(15, 15, 15) 0px 4px 4px 0.2px;
-
-     cursor: pointer;
-}
-
-.retangle .btn-c:active{
     box-shadow: rgb(0, 0, 0) 0px 4px 3px 1px, -2px -2px 3px 0.1px rgb(29, 29, 29), inset 0 0 3px rgb(18, 18, 18);
+ 
+    cursor: pointer;
 }
 
 .retangle .interno{
@@ -362,6 +365,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
 
     perspective: 10em;
     perspective-origin: 50% calc(50% - 2em);
@@ -391,24 +395,22 @@ h1{
     #111 0deg 90deg, 
     #222 90deg 180deg);
 
-
     background-size: 100%, 1em 1em;
 }
 
 .box{
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     position: absolute;
 
-    background-color: rgb(0, 255, 38);
+    background-color: rgba(0, 255, 38, 0.219);
     transform-style: preserve-3d;
-    right: 0;
 }
 
 .left, .right, .top, .bot{
 
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
 
     background-color: rgb(170, 255, 0);
     z-index: 10;
@@ -416,10 +418,30 @@ h1{
 
 }
 
-.left{
-
+.bot{
+    top: 100%;
+    transform: rotateX(-90deg);
+    background-color: yellow;
 }
 
+.top{
+    bottom: 100%;
+    transform: rotateX(-90deg);
+    background-color: blue;
+}
+
+.right{
+    transform: rotateY(-90deg);
+    left: 100%;
+    background-color: red;
+}
+
+
+.left{
+    transform: rotateY(-90deg) ;
+    background-color: fuchsia;
+    right: 100%;
+}
 
 .retangle .btn-c img{
     filter: invert(0.3);

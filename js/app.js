@@ -27,3 +27,7 @@ function criar(){
     q.innerHTML = "não digite senhas em qualquer lugar! Você digitou: " + passw.value + "<br> Número escolhido: " + num.value
 
 }
+
+function tocar(){
+    new Audio('img/camSound.mp3').play();
+}
