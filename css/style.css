@@ -371,7 +371,13 @@ h1{
     perspective-origin: 50% calc(50% - 2em);
 
     overflow: hidden;
+
 }
+
+.interno-2{
+    filter: brightness(5) sepia(2) hue-rotate(120deg);
+}
+
 
 .floor{
 

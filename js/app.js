@@ -31,3 +31,5 @@ function criar(){
 function tocar(){
     new Audio('img/camSound.mp3').play();
 }
+
+document.querySelector('button').addEventListener('click', function(){document.getElementById('interno').classList.toggle('interno-2');})
