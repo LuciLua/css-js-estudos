@@ -245,7 +245,7 @@ h1{
 
 .test{
     width: 100%;
-    height: 100vh;
+    height: fit-content;
 }
 
 .test h1{
@@ -271,7 +271,6 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10vh;
 }
 
 .content input[type=number]{
@@ -298,7 +297,6 @@ h1{
 }
 
 .cartao h3{
-    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -375,7 +373,7 @@ h1{
 }
 
 .interno-2{
-    filter: brightness(5) sepia(2) hue-rotate(120deg);
+    filter: brightness(10) sepia(2) hue-rotate(10deg) contrast(1.5) invert(1);
 }
 
 
@@ -404,50 +402,70 @@ h1{
     background-size: 100%, 1em 1em;
 }
 
-.box{
-    width: 60px;
-    height: 60px;
-    position: absolute;
 
-    background-color: rgba(0, 255, 38, 0.219);
+.cube{
+    width: 5em;
+    height: 5em;
+
     transform-style: preserve-3d;
-}
-
-.left, .right, .top, .bot{
-
-    width: 50px;
-    height: 50px;
-
-    background-color: rgb(170, 255, 0);
-    z-index: 10;
     position: absolute;
 
-}
+    bottom: 40%;
+    left: 45%;
+    top: 300px;
 
-.bot{
-    top: 100%;
-    transform: rotateX(-90deg);
-    background-color: yellow;
-}
-
-.top{
-    bottom: 100%;
-    transform: rotateX(-90deg);
-    background-color: blue;
-}
-
-.right{
-    transform: rotateY(-90deg);
-    left: 100%;
-    background-color: red;
+    transition: 1s;
 }
 
 
-.left{
-    transform: rotateY(-90deg) ;
-    background-color: fuchsia;
-    right: 100%;
+.cube .left,
+.cube .right,
+.cube .front,
+.cube .back{
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(255, 0, 0, 0.427);
+
+    box-shadow: 0 0 0.5em #000a inset;
 }
+
+.cube .front{ transform: translateZ(2.5em); }
+.cube .right{ transform:  rotateY(90deg) translateZ(2.5em); }
+.cube .back{ transform:  rotateY(180deg) translateZ(2.5em); }
+.cube .left{ transform:  rotateY(270deg) translateZ(2.5em); }
+
+.cube .top{
+    position: absolute;
+
+    width: 2em;
+    height: 2em;
+
+    transform: translateY(-50%) translateX(75%) rotateX(90deg) scale(2.5);
+
+    background-color: rgba(255, 0, 0, 0.427);
+
+}
+
+.cube .bottom{
+    position: absolute;
+    
+    width: 2em;
+    height: 2em;
+
+    background-color: #0007;
+
+    bottom: 0;
+    transform: translateY(50%) rotateX(90deg);
+
+    box-shadow:  0 0 0.5em #000 inset;
+}
+
+
+
 
 .retangle .btn-c img{
     filter: invert(0.3);
