@@ -43,5 +43,30 @@ function listar(nome, indice){
  console.log(`${indice + 1}. ${nome}`)
 }
 
-lista.forEach(listar, listando => console.log(listando) )
+lista.forEach(listar)
 
+
+function teste(){
+
+    var seuNome = document.getElementById('seunome')
+    var seuNomeResult = document.getElementById('seunomeresult')
+
+   const nomeCurto1 = seuNome.value
+
+    if (seuNome.value.length > 5){
+        seuNomeResult.value = nomeCurto1;
+    } if ( seuNome.value.length < 6){
+        seuNomeResult.value = 'Nome muito curto';
+    } if (seuNome.value.length > 12){
+        seuNomeResult.value = 'Nome muito grande'
+    }
+
+    switch (seuNome.value){
+        case 'lucilua81':
+            seuNomeResult.value = 'Olá luci'
+            break
+            case 'lolalola81':
+            seuNomeResult.value = 'Olá lola'
+            break               
+    }
+}

@@ -246,6 +246,7 @@ h1{
 .test{
     width: 100%;
     height: fit-content;
+    padding: 20px;
 }
 
 .test h1{
@@ -464,8 +465,11 @@ h1{
     box-shadow:  0 0 0.5em #000 inset;
 }
 
-
-
+#p, #q{
+    margin: 0px 0px 30px 0px;
+    border: rgb(118, 118, 118) 1px dashed;
+    padding: 10px;
+}
 
 .retangle .btn-c img{
     filter: invert(0.3);
@@ -475,4 +479,13 @@ h1{
 
 .callback{
     height: 100vh;
+}
+
+
+#seunomeresult{
+    user-select: none;
+    pointer-events: none;
+    border: none;
+    background-color: transparent;
+    text-align: center;
 }
