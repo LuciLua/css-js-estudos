@@ -70,3 +70,23 @@ function teste(){
             break               
     }
 }
+
+
+function triangulo(ladoA, ladoB, ladoC){
+
+    var ladoA = document.getElementById('ladoA').value
+    var ladoB = document.getElementById('ladoB').value
+    var ladoC = document.getElementById('ladoC').value
+
+    var result = document.getElementById('resulTri')
+
+    if (ladoA === ladoB &&  ladoB === ladoC){
+        return result.textContent = 'Equilátero'
+    }
+    else if((ladoA === ladoC && ladoA != ladoB) || (ladoB === ladoC && ladoC != ladoA) || (ladoA === ladoB && ladoB != ladoC) ){
+        return result.textContent = 'Isósceles'
+    }
+    else{
+        return result.textContent = 'Escaleno'
+    }
+}
