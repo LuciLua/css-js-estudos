@@ -662,8 +662,9 @@ h1{
 
     background-color: rgb(255, 255, 255);
 
-    width: clamp(500px, 90% , 900px);
-    height: 440px;
+    width: clamp(80px, 90% , 900px);
+    min-height: 440px;
+    max-height: 520px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.283);
 
     border-radius: 5px;
@@ -759,7 +760,7 @@ h1{
     
     width: 100%;
     height: calc(100% - 55px);
-    padding: 50px;
+    padding: 20px 20px 20px 20px;
 }
 
 .flexbox .right .bottom h1{
@@ -844,3 +845,22 @@ h1{
 
     cursor: pointer;
 }
+
+@media only screen and (max-width: 600px) {
+    .flexbox .left{
+        display: none;
+    }
+
+    .flexbox .right{
+        width: 100%;
+        top: 10px;
+    }
+
+    .flexbox .right .bottom{
+        padding-top: 50px;
+    }
+
+    .flexbox .right .bottom h1{
+        margin-top: 0;
+    }
+  }
