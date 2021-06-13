@@ -244,7 +244,7 @@ h1{
     margin-top: 50px;
     margin-bottom: 50px;
 
-    font-family: Arial;
+    font-family: 'Lexend', sans-serif;
 
     background-color: rgb(255, 255, 255);
 
@@ -351,6 +351,7 @@ h1{
 
 .flexbox .right .bottom h1{
     color: rgb(255, 98, 0);
+
     font-size: 20px;
     margin-left: auto;
 
@@ -768,6 +769,20 @@ h1{
 
 /* Page 5 */
 
+.triangulos-box{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    width: 100%;
+    height: 100vh;
+
+    
+
+}
 
 .triangulos{
 
@@ -845,7 +860,6 @@ h1{
 
 /* Page 6 */
 
-
 .callback{
     display: flex;
     justify-content: center;
@@ -853,7 +867,42 @@ h1{
     flex-direction: column;
 
     height: 100vh;
+}
 
+.callback p{
+    color: rgb(138, 138, 138);
+
+    font-family: 'Lexend' 'sans-serif';
+    text-transform: capitalize;
+}
+
+.box-in{
+    background-color: #f9f9;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+
+    border-radius: 5px;
+
+    box-shadow: rgba(116, 116, 116, 0.027) 10px 10px 23px;
+}
+
+.box-in input{
+    border: none;
+    border-radius: 20px;
+    height: 25px;
+
+    padding-left: 25px;
+
+    margin: 10px;
+
+    outline: none;
 }
 
 #seunomeresult{
@@ -862,6 +911,12 @@ h1{
     border: none;
     background-color: transparent;
     text-align: center;
+
+    color: rgb(128, 38, 130);
+}
+
+#seunomeresult::placeholder{
+    color: rgb(128, 38, 130);
 }
 
 /* Fim page 6 */
