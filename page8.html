@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando JS</title>
+    <link rel="stylesheet" href="/css/style.css" type="text/css" title="default style"/>
+    <link rel="shortcut icon" href="img/camera.svg" type="image/x-icon">
+</head>
+    <body>
+        <div class="menu">
+            <ul>
+                <li><a data-ico="" href="./index.html">Home</a></li>
+                <li><a href="./page1.html">page1</a></li>
+                <li><a href="./page2.html">page2</a></li>
+                <li><a href="./page3.html">page3</a></li>
+                <li><a href="./page4.html">page4</a></li>
+                <li><a href="./page5.html">page5</a></li>
+                <li><a href="./page6.html">page6</a></li>
+                <li><a href="./page7.html">page7</a></li>
+                <li><a href="./page8.html">page8</a></li>
+            </ul>
+        </div>
+        <div class="callback">
+            <p>Array: </p> <span class="array"></span>
+            <p>Array: </p> <span class="array2"></span>
+            <div class="line"></div>            
+            <div class="box-in-2">
+                <p>map:</p><span class="map"></span>
+                <p>filter 1:</p><span class="filter"></span>
+                <p>filter 2:</p><span class="filter2"></span>
+                <p>filter 3:</p><span class="filter3"></span>
+                <p>filter 4:</p><span class="filter4"></span>
+                <br>
+                    <script>
+                        const frutas = ['pera', 'maçã', 'banana', 'abacate', 'pêssego', 'banana', 'uva', 'pera', 'pera', 'maçã', 'pera']
+                        const biscoitos = ['povilho', 'creme', 'social', 'negresco', 'nesfit']
+                        document.querySelector('.array').textContent = frutas
+                        document.querySelector('.array2').textContent = biscoitos
+                        document.querySelector('.map').textContent = frutas.map(frutas => biscoitos[0])
+                        document.querySelector('.filter').textContent = (frutas.filter(frutas => frutas === 'banana').length) + ' bananas'
+                        document.querySelector('.filter2').textContent = (frutas.filter(frutas => frutas === 'maçã').length) + ' maçã'
+                        document.querySelector('.filter3').textContent = (frutas.filter(frutas => frutas === 'pera').length) + ' peras'
+                        document.querySelector('.filter4').textContent = (frutas.filter(frutas => frutas === 'caju').length) + ' cajus'
+                    </script>
+                <br>
+                <div class="lista">
+                <p id="pl">
+                </p>        
+            </div>
+        </div>
+    </body>
+    <script src="/js/app.js"></script>
+</html>

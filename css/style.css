@@ -54,7 +54,7 @@ h1{
 
 .menu ul:hover{
     width: 130px;
-    height: 400px;
+    height: 450px;
     transition: 0.5s;
     
 }
@@ -988,6 +988,36 @@ h1{
 }
 
 /* Fim page 7 */
+
+/* page 8 */
+
+.box-in-2{
+    background-color: rgba(216, 216, 216, 0.6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+
+    border-radius: 5px;
+
+    box-shadow: rgba(116, 116, 116, 0.027) 10px 10px 23px;
+
+    color: rgb(90, 90, 90);
+    font-family: 'Lexend' 'sans-serif';
+    font-weight: 600;
+}
+
+.box-in-2 span{
+    color: rgb(2, 2, 2);
+    margin: 10px;
+}
+
+/* Fim page 8 */
 
 /* Global Elementos */
 
