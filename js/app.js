@@ -27,23 +27,11 @@ function criar(){
     q.innerHTML = "não digite senhas em qualquer lugar! Você digitou: " + passw.value + "<br> Número escolhido: " + num.value
 
 }
-
+// page 2 smartphone cube sound and visual
 function tocar(){
     new Audio('img/camSound.mp3').play();
+    document.getElementById('interno').classList.toggle('interno-2')
 }
-
-document.querySelector('.btn-c').addEventListener('click', function(){document.getElementById('interno').classList.toggle('interno-2')})
-
-
-const lista = ["Canetas", "Estojos", "mochilas", "tesouras", "cadernos"]
-
-function listar(nome, indice){
- document.getElementById('pl').textContent = `${indice + 1}. ${nome}`
-
- console.log(`${indice + 1}. ${nome}`)
-}
-
-lista.forEach(listar)
 
 
 function teste(){
@@ -90,3 +78,16 @@ function triangulo(ladoA, ladoB, ladoC){
         return result.textContent = 'Escaleno'
     }
 }
+
+
+
+
+// const lista = ["Canetas", "Estojos", "mochilas", "tesouras", "cadernos"]
+
+// function listar(nome, indice){
+//  document.getElementById('pl').textContent = `${indice + 1}. ${nome}`
+
+//  console.log(`${indice + 1}. ${nome}`)
+// }
+
+// lista.forEach(listar)

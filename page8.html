@@ -62,6 +62,7 @@
                     function mecanism(){
 
                         var search = document.querySelector('.searchHere').value
+
                         document.querySelector('.result').textContent = (frutas.filter(frutas => frutas === search).length) + (` ${search.toUpperCase()}S ENCONTRADOS`)
 
                     }
