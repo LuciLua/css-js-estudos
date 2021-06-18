@@ -54,8 +54,8 @@
                 <input type="text" placeholder="Search here" class="searchHere">
                 <button onclick="mecanism()"> Search</button>
 
+                <span class="result"></span>
                 <div class="box-result">
-                    <span class="result"></span>
                 </div>
 
                 <script>
@@ -65,10 +65,27 @@
 
                         document.querySelector('.result').textContent = (frutas.filter(frutas => frutas === search).length) + (` ${search.toUpperCase()}S ENCONTRADOS`)
 
+                        var x = document.getElementsByClassName('box-result');                        
+                        var content = x[0].innerHTML;
+                        
+
+                        var div = document.createElement('div');
+                        div.setAttribute('class', 'card');
+                        div.innerHTML = content;
+
+                        var texto = document.createTextNode(`${frutas.filter(frutas => frutas === search)}`)
+                        div.appendChild(texto)
+
+                        if (search > 0){
+                            alert(search)
+                        }
+
+                        x[0].innerHTML = "";
+                        x[0].appendChild(div);                       
                     }
-                        
-                        
                 </script>
+
+                
 
             </div>
         </div>

@@ -1058,9 +1058,38 @@ h1{
     height: 300px;
 
     border: 1px rgb(197, 197, 197) solid;
-    
+
     margin-top: 20px;
     margin-bottom: 20px;
+
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+}
+
+.callback .box-in-2 .box-result .result{
+    font-family: 'Lexend' sans-serif;
+
+    color: #222;
+}
+
+.callback .box-in-2 .box-result .card{
+    width: fit-content;
+    height: fit-content;
+    
+    margin: 10px;
+
+    border: red 1px solid;
+
+    background-color: #fff;
+    box-shadow: 0 0 13px #b1b1b115;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
 }
 
 /* Fim page 8 */
