@@ -23,8 +23,8 @@
             </ul>
         </div>
         <div class="callback">
-            <p>Array: </p> <span class="array"></span>
-            <p>Array: </p> <span class="array2"></span>
+            <p>Array: </p><span class="array"></span>
+            <p>Array: </p><span class="array2"></span>
             <div class="line"></div>            
             <div class="box-in-2">
                 <p>map:</p><span class="map"></span>
@@ -32,22 +32,43 @@
                 <p>filter 2:</p><span class="filter2"></span>
                 <p>filter 3:</p><span class="filter3"></span>
                 <p>filter 4:</p><span class="filter4"></span>
-                <br>
-                    <script>
-                        const frutas = ['pera', 'maçã', 'banana', 'abacate', 'pêssego', 'banana', 'uva', 'pera', 'pera', 'maçã', 'pera']
-                        const biscoitos = ['povilho', 'creme', 'social', 'negresco', 'nesfit']
-                        document.querySelector('.array').textContent = frutas
-                        document.querySelector('.array2').textContent = biscoitos
-                        document.querySelector('.map').textContent = frutas.map(frutas => biscoitos[0])
-                        document.querySelector('.filter').textContent = (frutas.filter(frutas => frutas === 'banana').length) + ' bananas'
-                        document.querySelector('.filter2').textContent = (frutas.filter(frutas => frutas === 'maçã').length) + ' maçã'
-                        document.querySelector('.filter3').textContent = (frutas.filter(frutas => frutas === 'pera').length) + ' peras'
-                        document.querySelector('.filter4').textContent = (frutas.filter(frutas => frutas === 'caju').length) + ' cajus'
-                    </script>
-                <br>
-                <div class="lista">
-                <p id="pl">
-                </p>        
+                <p>find:</p><span class="find"></span>
+                <br/>
+
+                <script>
+                    const frutas = ['pera', 'maçã', 'banana', 'abacate', 'pêssego', 'banana', 'uva', 'pera', 'pera', 'maçã', 'pera', 'abacate']
+                    const biscoitos = ['povilho', 'creme', 'social', 'negresco', 'nesfit']
+
+                    document.querySelector('.array').textContent = frutas
+                    document.querySelector('.array2').textContent = biscoitos
+                    document.querySelector('.map').textContent = frutas.map(frutas => biscoitos[0])
+                    document.querySelector('.filter').textContent = (frutas.filter(frutas => frutas === 'banana').length) + ' bananas'
+                    document.querySelector('.filter2').textContent = (frutas.filter(frutas => frutas === 'maçã').length) + ' maçã'
+                    document.querySelector('.filter3').textContent = (frutas.filter(frutas => frutas === 'pera').length) + ' peras'
+                    document.querySelector('.filter4').textContent = (frutas.filter(frutas => frutas === 'caju').length) + ' cajus'
+                    document.querySelector('.find').textContent = biscoitos.find(biscoitos =>  biscoitos === "negresco")
+                </script>
+
+                <br/>
+                <p>Search fruits</p>
+                <input type="text" placeholder="Search here" class="searchHere">
+                <button onclick="mecanism()"> Search</button>
+
+                <div class="box-result">
+                    <span class="result"></span>
+                </div>
+
+                <script>
+                    function mecanism(){
+
+                        var search = document.querySelector('.searchHere').value
+                        document.querySelector('.result').textContent = (frutas.filter(frutas => frutas === search).length) + (` ${search.toUpperCase()}S ENCONTRADOS`)
+
+                    }
+                        
+                        
+                </script>
+
             </div>
         </div>
     </body>
