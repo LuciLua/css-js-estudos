@@ -1054,7 +1054,7 @@ h1{
 }
 
 .callback .box-in-2 .box-result{
-    width: 100%;
+    width: 90vw;
     height: 300px;
 
     border: 1px rgb(197, 197, 197) solid;
@@ -1066,6 +1066,9 @@ h1{
 
     display: flex;
     align-items: center;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 
 .callback .box-in-2 .box-result .result{
@@ -1075,12 +1078,14 @@ h1{
 }
 
 .callback .box-in-2 .box-result .card{
-    width: fit-content;
-    height: fit-content;
+    width: 120px;
+    max-width: 120px;
+    min-width: 120px;
+    height: 100px;
+    min-height: 100px;
+    max-height: 100px;
     
     margin: 10px;
-
-    border: red 1px solid;
 
     background-color: #fff;
     box-shadow: 0 0 13px #b1b1b115;
@@ -1090,6 +1095,8 @@ h1{
     justify-content: center;
 
     border-radius: 10px;
+
+    padding: 10px;
 }
 
 /* Fim page 8 */
