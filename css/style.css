@@ -1000,14 +1000,32 @@ h1{
     align-items: center;
 }
 
-.callback p{
-    margin: 30px;
+.callback .arrays{
+    box-shadow: 0 0 15px rgba(155, 155, 155, 0.282);
+    border-radius: 30px;
+
+    margin-top: 30px;
+    
+    padding: 30px;
+
+    line-height: 2;
+
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-.callback span{
-    word-break: break-all;
+.callback .arrays span{
+    word-break:break-all;
+
     margin-left: 30px;
     margin-right: 30px;
+
+    font-family: 'Lexend' sans-serif;
+    font-weight: 600;
+
+    color: rgb(84, 83, 83);
+
+    padding: 20px;
 }
 
 .callback .box-in-2{

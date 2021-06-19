@@ -23,9 +23,11 @@
             </ul>
         </div>
         <div class="callback">
-            <p>Array: </p><span class="array"></span>
-            <p>Array: </p><span class="array2"></span>        
-            <div class="line"></div>            
+            <div class='arrays'>
+                <p>Fruits: </p><span class="array"></span>
+                <p>Cookies: </p><span class="array2"></span>        
+            </div>
+                <div class="line"></div>            
             <div class="box-in-2">
                 <br/>
                 <p>Search fruits</p>
@@ -44,6 +46,10 @@
                 </div>
                 
                 <script>
+
+                    const frutas = ['pera', 'maçã', 'banana', 'abacate', 'pêssego', 'banana', 'uva', 'pera', 'pera', 'maçã', 'pera', 'abacate','melancia']
+                    const biscoitos = ['povilho', 'creme', 'social', 'negresco', 'nesfit']
+                    
                     function mecanism(){
                         
                         var search = document.querySelector('.searchHere').value
@@ -93,9 +99,6 @@
                 <br/>
 
                 <script>
-                    const frutas = ['pera', 'maçã', 'banana', 'abacate', 'pêssego', 'banana', 'uva', 'pera', 'pera', 'maçã', 'pera', 'abacate']
-                    const biscoitos = ['povilho', 'creme', 'social', 'negresco', 'nesfit']
-
                     document.querySelector('.array').textContent = frutas
                     document.querySelector('.array2').textContent = biscoitos
                     document.querySelector('.map').textContent = frutas.map(frutas => biscoitos[0])
