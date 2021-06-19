@@ -11,7 +11,7 @@
     <body>
         <div class="menu">
             <ul>
-                <li><a data-ico="" href="./index.html">Home</a></li>
+                <li><a data-ico="" href="../index.html">Home</a></li>
                 <li><a href="./page1.html">page1</a></li>
                 <li><a href="./page2.html">page2</a></li>
                 <li><a href="./page3.html">page3</a></li>
@@ -22,17 +22,23 @@
                 <li><a href="./page8.html">page8</a></li>
             </ul>
         </div>
-        <div class="callback">
-            <p>tente lucilua81 ou lolalola81</p>
-            <br>
-            <div class="box-in">
-                <input type="text" name="" id="seunome" placeholder="seuNome" value="" oninput="teste()"/>
-                <input type="text" name="" id="seunomeresult" placeholder="seuNomeResult" value=""/>
-            </div>
-            <br>
-            <div class="lista">
-                <p id="pl">
-                </p>        
+        <div class="black-200">
+            <div class="retangle">
+                <button class="btn-c" onclick="tocar()">
+                    <img src="img/camera.svg" alt="">
+                    <audio id="cam" src="img/camSound.mp3"></audio>
+                </button>
+                <div class="interno" id="interno">
+                    <div class="floor"></div>
+                    <div class="cube">
+                        <div class="front"></div>
+                        <div class="back"></div>
+                        <div class="left"></div>
+                        <div class="right"></div>
+                        <div class="top">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
