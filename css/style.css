@@ -1053,6 +1053,35 @@ h1{
     outline: none;
 }
 
+.callback .box-in-2 button{
+    border: none;
+    border-radius: 50px;
+
+    background-color: #000;
+    padding: 8px 40px;
+
+
+    margin: 10px;
+
+    cursor: pointer;
+
+    color: rgb(255, 255, 255);
+    font-family: 'Lexend' sans-serif;
+    font-weight: 600;
+}
+
+
+.callback .box-in-2 button:hover{
+    background-color: rgb(26, 26, 26);
+    color: #fff;
+}
+
+.callback .box-in-2 button:last-of-type{
+    background-color: transparent;
+    color: rgb(47, 65, 55);
+}
+
+
 .callback .box-in-2 .box-result{
     width: 90vw;
     height: 300px;
@@ -1069,6 +1098,14 @@ h1{
 
     overflow-x: scroll;
     overflow-y: hidden;
+}
+
+.callback .box-in-2 .box-result::-webkit-scrollbar{
+    height: 1px;
+    background-color: rgba(89, 89, 89, 0.124);
+}
+.callback .box-in-2 .box-result::-webkit-scrollbar-thumb{
+    background-color: rgb(46, 46, 46);
 }
 
 .callback .box-in-2 .box-result .result{
