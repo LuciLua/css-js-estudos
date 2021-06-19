@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Treinando JS</title>
-    <link rel="stylesheet" href="/css/style.css" type="text/css" title="default style"/>
-    <link rel="shortcut icon" href="img/camera.svg" type="image/x-icon">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Treinando JS</title>
+        <link rel="stylesheet" href="/css/style.css" type="text/css" title="default style"/>
+        <link rel="shortcut icon" href="img/camera.svg" type="image/x-icon">
+    </head>
     <body>
         <div class="menu">
             <ul>
@@ -24,9 +24,66 @@
         </div>
         <div class="callback">
             <p>Array: </p><span class="array"></span>
-            <p>Array: </p><span class="array2"></span>
+            <p>Array: </p><span class="array2"></span>        
             <div class="line"></div>            
             <div class="box-in-2">
+                <br/>
+                <p>Search fruits</p>
+                <input type="text" placeholder="Search here" class="searchHere">
+                <button onclick="mecanism()"> Search</button>
+                <button onclick="
+                var cards = document.querySelectorAll('.card')
+                
+                
+                for(let i = 0; i < cards.length; i++){
+                    cards[i].remove()   
+                }">Clear</button>
+                
+                <span class="result"></span>
+                <div class="box-result">
+                </div>
+                
+                <script>
+                    function mecanism(){
+                        
+                        var search = document.querySelector('.searchHere').value
+                        var resultado = document.querySelector('.result')
+                
+                        
+                        var x = document.getElementsByClassName('box-result'); //elemnto pai                           
+                        var content = '';
+                        
+                        if ((frutas.filter(frutas => frutas === search).length) <= 0){
+                            var texto = document.createTextNode(`nada encontrado`)
+                            resultado.textContent = 'digite algo, por favor'
+                        }
+                        else{
+                            var texto = document.createTextNode(`${frutas.filter(frutas => frutas === search)}`)
+                            resultado.textContent = (frutas.filter(frutas => frutas === search).length) + (` ${search.toUpperCase()}S ENCONTRADOS`)                            
+                        }
+                                                        
+                            var div = document.createElement('div');
+                            div.setAttribute('class', 'card');
+                            div.innerHTML = content;
+                
+                            x[0].appendChild(div);                                                       
+                            div.appendChild(texto)                    
+                        }
+                        
+                        function clear(){
+                            var cards = document.querySelectorAll('.card')
+                
+                            alert(cards.length, 'ola')
+                
+                            for(let i = 0; i < cards.length; i++){
+                                cards[i].remove()   
+                            }
+                        }
+                    </script>
+
+                <div class="line"></div>  
+                
+
                 <p>map:</p><span class="map"></span>
                 <p>filter 1:</p><span class="filter"></span>
                 <p>filter 2:</p><span class="filter2"></span>
@@ -49,65 +106,6 @@
                     document.querySelector('.find').textContent = biscoitos.find(biscoitos =>  biscoitos === "negresco")
                 </script>
                 
-                <br/>
-                <p>Search fruits</p>
-                <input type="text" placeholder="Search here" class="searchHere">
-                <button onclick="mecanism()"> Search</button>
-                <button onclick="
-                var cards = document.querySelectorAll('.card')
-
-
-                for(let i = 0; i < cards.length; i++){
-                    cards[i].remove()   
-                }">Clear</button>
-                
-                <span class="result"></span>
-                <div class="box-result">
-                </div>
-                
-                <script>
-                    function mecanism(){
-                        
-                        var search = document.querySelector('.searchHere').value
-                        var resultado = document.querySelector('.result')
-
-                        
-                        var x = document.getElementsByClassName('box-result'); //elemnto pai                           
-                        var content = '';
-                        
-                        if ((frutas.filter(frutas => frutas === search).length) <= 0){
-                            var texto = document.createTextNode(`nada encontrado`)
-                            resultado.textContent = 'digite algo, por favor'
-                        }
-                        else{
-                            var texto = document.createTextNode(`${frutas.filter(frutas => frutas === search)}`)
-                            resultado.textContent = (frutas.filter(frutas => frutas === search).length) + (` ${search.toUpperCase()}S ENCONTRADOS`)                            
-                        }
-                                                        
-                            var div = document.createElement('div');
-                            div.setAttribute('class', 'card');
-                            div.innerHTML = content;
-
-                            x[0].appendChild(div);                                                       
-                            div.appendChild(texto)                    
-                        }
-                        
-                        function clear(){
-                            var cards = document.querySelectorAll('.card')
-
-                            alert(cards.length, 'ola')
-    
-                            for(let i = 0; i < cards.length; i++){
-                                cards[i].remove()   
-                            }
-                        }
-
-                        
-                        
-                    </script>
-
-                
-
             </div>
         </div>
     </body>
