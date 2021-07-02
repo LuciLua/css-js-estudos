@@ -872,23 +872,70 @@ h1{
 }
 
 .callback p{
-    color: rgb(228, 228, 228);
-    background-color: rgba(38, 38, 38, 0.301);
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 255, 64, 0.349);
 
-    padding: 20px 30px;
-    border-radius: 24px;
-    
+    border: 1px solid rgba(255, 255, 255, 0.164);
+
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+
+    padding: 13px 35px;
+    border-radius: 14px;
+
+    width: fit-content;
+
     font-family: 'Lexend' 'sans-serif';
-    text-transform: capitalize;
+
+    margin: 3px;
 
     position: relative;
     z-index: 3;
+
+    animation: fadeIn 2s linear;
 }
 
+@keyframes fadeIn {
+    0%{
+        opacity: 0%;
+        top: 20px;
+    }
+    80%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+        top: 0;
+    }
+}
+
+.callback p:last-of-type{
+    background-color: rgba(255, 78, 78, 0.719);
+    animation: fadeIn 2.5s linear;
+}
+
+
+@keyframes fadeInSemTop {
+    0%{
+        opacity: 0%;
+
+    }
+    30%{
+        opacity: 0%;
+
+    }
+    100%{
+        opacity: 100%;
+    }
+}
 .background-page8{
+
+    animation: fadeInSemTop 1s linear;
+
+
     width: 100%;
     height: 100vh;
-    background-color: #100027;
+    background: linear-gradient(34deg,  #a0e9ff 20%, rgb(89, 222, 255));
 
     padding: 10px;
 
@@ -906,12 +953,13 @@ h1{
 .background-page8::before{
     content: '';
     display: flex;
-    background-color: #B931FF;
+
+    background: rgb(201, 255, 140);
     width: 30vh;
     height: 30vh;
 
-    margin-left: clamp(3rem,5rem, 5rem);
-    margin-bottom: clamp(20vh, 40vh, 40vh);
+    margin-left: clamp(3rem,25rem, 30rem);
+    margin-bottom: clamp(20vh, -40vh, 40vh);
 
     position: absolute;
 
@@ -936,47 +984,48 @@ h1{
 }
 
 .box-in{
-    background: linear-gradient(-40deg, rgba(68, 104, 56, 0.57), rgba(255, 255, 255, 0.398));
+    background: linear-gradient(-40deg, rgba(89, 222, 255, 0.364), rgba(255, 255, 255, 0.398));
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 
-    width: clamp(150px, 60vh, 60vh);
+    width: clamp(130px, 53vh, 60vh);
     height: clamp(130px, 35vh, 60vh);
     padding: 20px;
 
     border-radius: 20px;
 
-    box-shadow: rgba(0, 0, 0, 0.159) 10px 10px 23px, inset 0px 0px 1px 1px rgba(255, 255, 255, 0.364);
+    box-shadow: rgba(14, 131, 160, 0.213) 10px 10px 23px, inset 0px 0px 1px 1px rgba(255, 255, 255, 0.364);
     z-index: 2;
-    -webkit-backdrop-filter: blur(3px);
-    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
 }
 
 .box-in input{
     border: 1.5px solid rgba(255, 255, 255, 0.405);
     border-radius: 20px;
 
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.179);
+    box-shadow: 2px -2px 4px rgba(255, 255, 255, 0.213);
 
     color: #fff;
     
-    height: 25px;
-    width: 150px;
-
-    padding-left: 25px;
+    height: 35px;
+    width: 190px;
 
     margin: 10px;
 
     outline: none;
 
-    background-color: rgba(255, 255, 255, 0.124);
+    background-color: rgba(255, 255, 255, 0.104);
+
+    text-align: center;
 }
 
 .box-in input::placeholder{
-    color: rgba(255, 255, 255, 0.617);
+    color: rgba(255, 255, 255, 0.624);
+    text-shadow: 1px 1px 2px rgba(194, 194, 194, 0.993);
 }
 
 #seunomeresult{
@@ -997,8 +1046,8 @@ h1{
 
     box-shadow: none;
 
-    color: rgba(255, 255, 255, 0.946);
-    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 7px rgba(19, 131, 235, 0.604);
 }
 
 #seunomeresult::placeholder{
