@@ -11,6 +11,21 @@
     --g0: rgb(255, 255, 255);
 }
 
+
+@keyframes fadeInPages {
+    0%{
+        opacity: 0%;
+        top: 20px;
+    }
+    20%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+        top: 0;
+    }
+}
+
 /* font */
 
 @import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
@@ -258,7 +273,10 @@ h1{
     overflow: hidden;
 
     position: relative;
+
+    animation: fadeInPages 0.5s linear;
 }
+
 
 .flexbox .left{
     position: absolute;
@@ -447,6 +465,8 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
+
+    animation: fadeInPages 0.3s linear;
 }
 
 .retangle{
@@ -618,6 +638,11 @@ h1{
     display: flex;
     flex-wrap: wrap;
     place-content: center;
+
+    margin-top: 30vh;
+
+    animation: fadeInPages 0.8s linear;
+
 }
 
 .cards2 .card{
@@ -687,6 +712,8 @@ h1{
     height: fit-content;
     width: 80%;
     margin: 10px auto 10px auto;
+
+    animation: fadeInPages 1s linear;
 }
 .form form{
     display: flex;
@@ -780,7 +807,7 @@ h1{
     width: 100%;
     height: 100vh;
 
-    
+    animation: fadeInPages 1s linear;
 
 }
 
@@ -1065,6 +1092,8 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
+
+    animation: fadeInPages 1s linear;
 }
 
 .content input[type=number]{
@@ -1120,6 +1149,13 @@ h1{
     margin: 0px 0px 30px 0px;
     border: rgb(118, 118, 118) 1px dashed;
     padding: 10px;
+
+    animation: fadeInPages 1s linear;
+}
+
+.btnS{
+    animation: fadeInPages 1s linear;
+
 }
 
 /* Fim page 7 */
@@ -1133,6 +1169,8 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    animation: fadeInPages 1s linear;
 }
 
 .callback .arrays{
@@ -1189,6 +1227,13 @@ h1{
     margin: 0;
 }
 
+.callback .box-in-2 .outResult{
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+}
+
 .callback .box-in-2 span{
     color: rgb(2, 2, 2);
     margin: 10px;
@@ -1224,18 +1269,28 @@ h1{
 }
 
 
-.callback .box-in-2 button:hover{
+.callback .box-in-2 .outResult button:hover{
     background-color: rgb(26, 26, 26);
     color: #fff;
 }
 
-.callback .box-in-2 button:last-of-type{
+.callback .box-in-2 .outResult button:last-of-type{
     background-color: transparent;
     color: rgb(47, 65, 55);
 }
 
+.outResult{
+    position: relative;
+    width: 100%;
+    height: 300px;
 
-.callback .box-in-2 .box-result{
+    background-color: transparent;
+    z-index: 1;
+
+}
+
+
+.callback .box-in-2 .outResult .box-result{
     width: 90vw;
     height: 300px;
 
@@ -1251,26 +1306,75 @@ h1{
 
     overflow-x: scroll;
     overflow-y: hidden;
+
+    cursor: grab;
+
+    position: relative;
 }
 
-.callback .box-in-2 .box-result::-webkit-scrollbar{
-    height: 1px;
+.callback .box-in-2 .outResult .box-result:active{
+    cursor: grabbing;
+}
+
+.box-result::-webkit-scrollbar{
+    background-color: transparent;
+    z-index: 10;
+}
+
+.callback .box-in-2 .outResult::-webkit-scrollbar{
+    height: 0px;
     background-color: rgba(89, 89, 89, 0.124);
-}
-.callback .box-in-2 .box-result::-webkit-scrollbar-thumb{
-    background-color: rgb(46, 46, 46);
+    transition: 1s;
+    
+    background-color: transparent;
+    z-index: -20;
 }
 
-.callback .box-in-2 .box-result .result{
+.callback .box-in-2 .outResult::-webkit-scrollbar:hover{
+    cursor: grabbing;
+    display: none;
+
+    transition: 2s;
+}
+   
+
+.callback .box-in-2 .outResult :hover::-webkit-scrollbar{
+    transition: 1s;
+    height: 105px;
+
+    background-color: none;
+
+    opacity: 0%;
+}
+
+.callback .box-in-2 .outResult :active::-webkit-scrollbar{
+   z-index: -100;
+}
+
+.callback .box-in-2 .outResult::-webkit-scrollbar-thumb{
+    background-color: transparent;
+    opacity: 0%;
+    z-index: -1;
+}
+
+
+.callback .box-in-2 .outResult .box-result .result{
     font-family: 'Lexend' sans-serif;
 
     color: #222;
 }
 
-.callback .box-in-2 .box-result .card{
+.callback .box-in-2 .outResult .box-result:hover .card{
+
+    margin-top: 99px;
+    position: relative;
+}
+
+.callback .box-in-2 .outResult .box-result .card{
     width: 120px;
     max-width: 120px;
     min-width: 120px;
+
     height: 100px;
     min-height: 100px;
     max-height: 100px;
@@ -1287,6 +1391,12 @@ h1{
     border-radius: 10px;
 
     padding: 10px;
+
+    position: relative;
+
+    z-index: 30000;
+    /* pointer-events: none;
+    user-select: none; */
 }
 
 /* Fim page 8 */
