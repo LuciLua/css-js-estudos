@@ -69,7 +69,7 @@ h1{
 
 .menu ul:hover{
     width: 130px;
-    height: 450px;
+    height: fit-content;
     transition: 0.5s;
     
 }
@@ -1436,3 +1436,4 @@ h1{
 }
 
 /* Fim media */
+
