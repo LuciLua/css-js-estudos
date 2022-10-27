@@ -1,0 +1,207 @@
+
+/* Page 1 */
+
+.flexbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    font-family: 'Lexend', sans-serif;
+
+    background-color: rgb(255, 255, 255);
+
+    width: clamp(80px, 90% , 900px);
+    min-height: 440px;
+    max-height: 520px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.283);
+
+    border-radius: 5px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    animation: fadeInPages 0.5s linear;
+}
+
+
+.flexbox .left{
+    position: absolute;
+    width: 40%;
+    height: 100%;
+
+    right: 60%;
+
+    overflow: hidden;
+
+    border-radius: 5px;
+    
+    background-image: url('/tom-roberts-eAqwgnC4iEM-unsplash.jpg');
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    background-size: 800px;
+
+    filter:  brightness(1.5);
+}
+
+.flexbox .right{
+    width: 60%; 
+    height: 100%;
+    position: relative;
+    
+    margin-left: auto;
+
+    border-radius: 5px;
+}
+
+.flexbox .right .top{
+    width: 100%;
+    height: 55px;
+    
+    top: 0;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexbox .right .top ul{
+    list-style: none;
+    display: flex;
+
+    width: 100%;
+    height: 90%;
+
+    position: relative;
+}
+
+.flexbox .right .top ul li{
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    
+    color: rgb(254, 156, 134);
+    font-size: 12px;
+    
+    height: 100%;
+    width: 30%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: relative;
+}
+
+.flexbox .right .top ul li:first-of-type{
+    border-bottom: rgb(255, 136, 109) 2px solid;
+}
+
+
+.flexbox .right .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    
+    width: 100%;
+    height: calc(100% - 55px);
+    padding: 20px 20px 20px 20px;
+}
+
+.flexbox .right .bottom h1{
+    color: rgb(255, 98, 0);
+
+    font-size: 20px;
+    margin-left: auto;
+
+    width: 100%;
+
+    position: relative;
+
+    margin: 15px
+}
+
+.flexbox .right .bottom p{
+    font-size: 11px;
+    color: rgb(159, 159, 159);
+
+    text-align: justify;
+
+    line-height: 1.5;
+}
+
+.flexbox .right .bottom .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+
+    position: relative;
+
+    width: fit-content;
+    height: 210px;
+
+    margin: 20px;
+}
+
+.flexbox .right .bottom .cards .card{
+    border: 1px solid rgba(114, 114, 114, 0.256);
+    
+    width: 130px;
+    height: 80px;
+
+    margin: 10px;
+
+    position: relative;
+
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+}
+
+.flexbox .right .bottom .cards .card h1{
+    color: rgb(255, 98, 0);
+    font-size: 18px;
+    
+    text-align: center;
+}
+
+.flexbox .right .bottom .cards .card p{
+    color: rgb(137, 137, 137);
+}
+
+.flexbox .right .bottom button{
+    background-color: rgb(255, 98, 0);
+    color: #fff;
+    font-weight: 600;
+    font-size: 13px;
+
+    width: 280px;
+    min-height: 30px;
+
+    position: relative;
+    bottom: 10px;
+
+    border: none;
+    border-radius: 3px;
+
+    cursor: pointer;
+}
+
+/* Fim Page 1 */

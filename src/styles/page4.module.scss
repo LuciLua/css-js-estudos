@@ -1,0 +1,87 @@
+
+/* Page 4 */
+.form{
+    height: fit-content;
+    width: 80%;
+    margin: 10px auto 10px auto;
+
+    animation: fadeInPages 1s linear;
+}
+.form form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form .col{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.form label{
+    position: relative;
+    right: 20px;
+    margin: 15px;
+    font-family: Arial;
+
+}
+
+.form input{
+    width: 150px;
+    height: 24px;
+    border: rgba(0, 0, 0, 0.605) 1px solid;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+.form .col input[type=checkbox]{
+    width: 15px;
+    height: 15px;  
+    margin: 5px 0 0 0;
+}
+
+.form .col input[type=checkbox]::after{
+
+    content: attr(data-skill);
+    margin-left: 20px;
+}
+
+
+.form .col.skills{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    
+    margin: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+
+.form .col.skills textarea{
+    resize: none;
+    width: 150px;
+    height: 100px;
+    margin-top: 10px;
+    padding: 10px;
+    
+    border-radius: 6px;
+
+}
+
+.colg{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+/* Fim page 4 */

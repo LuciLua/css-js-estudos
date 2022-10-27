@@ -1,27 +1,10 @@
-*::before,
-*,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0%;
-  }
-  to {
-    opacity: 100%;
-  }
-}
-
 .cardFigma {
   margin: 10px;
   position: relative;
   width: 350px;
   height: 550px;
   background-color: #8800ff;
-  background-image: "back.svg";
+  background-image: "/back.svg";
 
   box-shadow: 0 0 12px #0004;
 
@@ -107,3 +90,13 @@
   position: absolute;
   bottom: -15px;
 }
+
+
+@keyframes fade {
+    from {
+      opacity: 0%;
+    }
+    to {
+      opacity: 100%;
+    }
+  }

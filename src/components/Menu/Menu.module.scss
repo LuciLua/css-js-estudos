@@ -1,0 +1,67 @@
+
+/* menu */
+
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 1000;
+}
+
+.menu ul{
+    list-style: none;
+
+    border-radius: 10px;
+    margin: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+
+    box-shadow:  0 0 12px rgba(0, 0, 0, 0.345);
+}
+
+.menu ul li{
+    width: 130px;
+    height: fit-content;
+    position: relative;
+}
+
+.menu ul li a:hover{
+    color: rgb(100, 68, 215);
+    background-color: rgb(255, 255, 255);
+}
+
+.menu ul li a:hover::before{
+    filter: invert(0);
+    content:url('/ico.svg');
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-family: Arial;
+
+    background-color: rgb(100, 68, 215);
+    color: var(--g0);
+
+    padding: 15px;
+
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+.menu ul li a::before{
+    content:url('/ico.svg');
+    filter: invert(1);
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+
+    display: flex;
+    padding: 2px;
+    justify-content: center;
+}
+
+/* fim menu */

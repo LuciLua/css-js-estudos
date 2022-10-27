@@ -1,0 +1,241 @@
+
+/* page 8 */
+
+.callback{
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: fadeInPages 1s linear;
+}
+
+.callback .arrays{
+    box-shadow: 0 0 15px rgba(155, 155, 155, 0.282);
+    border-radius: 30px;
+
+    margin-top: 30px;
+    
+    padding: 30px;
+
+    line-height: 2;
+
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.callback .arrays span{
+    word-break:break-all;
+
+    margin-left: 30px;
+    margin-right: 30px;
+
+    font-family: 'Lexend' sans-serif;
+    font-weight: 600;
+
+    color: rgb(84, 83, 83);
+
+    padding: 20px;
+}
+
+.callback .boxin2{
+    background-color: rgba(216, 216, 216, 0.6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-direction: column;
+
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+
+    border-radius: 5px;
+
+    box-shadow: rgba(116, 116, 116, 0.027) 10px 10px 23px;
+
+    color: rgb(90, 90, 90);
+    font-family: 'Lexend' 'sans-serif';
+    font-weight: 600;
+
+    word-break: break-all;
+
+    margin: 0;
+}
+
+.callback .boxin2 .outResult{
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+}
+
+.callback .boxin2 span{
+    color: rgb(2, 2, 2);
+    margin: 10px;
+}
+
+
+.callback .boxin2 input{
+    padding: 5px;
+    
+    margin: 15px;
+    
+    border: none;
+    
+    border-radius: 5px;
+    outline: none;
+}
+
+.callback .boxin2 button{
+    border: none;
+    border-radius: 50px;
+
+    background-color: #000;
+    padding: 8px 40px;
+
+
+    margin: 10px;
+
+    cursor: pointer;
+
+    color: rgb(255, 255, 255);
+    font-family: 'Lexend' sans-serif;
+    font-weight: 600;
+}
+
+
+.callback .boxin2 .outResult button:hover{
+    background-color: rgb(26, 26, 26);
+    color: #fff;
+}
+
+.callback .boxin2 .outResult button:last-of-type{
+    background-color: transparent;
+    color: rgb(47, 65, 55);
+}
+
+.outResult{
+    position: relative;
+    width: 100%;
+    height: 300px;
+
+    background-color: transparent;
+    z-index: 1;
+
+}
+
+
+.callback .boxin2 .outResult .boxresult{
+    width: 90vw;
+    height: 300px;
+
+    border: 1px rgb(197, 197, 197) solid;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    cursor: grab;
+
+    position: relative;
+}
+
+.callback .boxin2 .outResult .boxresult:active{
+    cursor: grabbing;
+}
+
+.boxresult::-webkit-scrollbar{
+    background-color: transparent;
+    z-index: 10;
+}
+
+.callback .boxin2 .outResult::-webkit-scrollbar{
+    height: 0px;
+    background-color: rgba(89, 89, 89, 0.124);
+    transition: 1s;
+    
+    background-color: transparent;
+    z-index: -20;
+}
+
+.callback .boxin2 .outResult::-webkit-scrollbar:hover{
+    cursor: grabbing;
+    display: none;
+
+    transition: 2s;
+}
+   
+
+.callback .boxin2 .outResult :hover::-webkit-scrollbar{
+    transition: 1s;
+    height: 105px;
+
+    background-color: none;
+
+    opacity: 0%;
+}
+
+.callback .boxin2 .outResult :active::-webkit-scrollbar{
+   z-index: -100;
+}
+
+.callback .boxin2 .outResult::-webkit-scrollbar-thumb{
+    background-color: transparent;
+    opacity: 0%;
+    z-index: -1;
+}
+
+
+.callback .boxin2 .outResult .boxresult .result{
+    font-family: 'Lexend' sans-serif;
+
+    color: #222;
+}
+
+.callback .boxin2 .outResult .boxresult:hover .card{
+
+    margin-top: 99px;
+    position: relative;
+}
+
+.callback .boxin2 .outResult .boxresult .card{
+    width: 120px;
+    max-width: 120px;
+    min-width: 120px;
+
+    height: 100px;
+    min-height: 100px;
+    max-height: 100px;
+    
+    margin: 10px;
+
+    background-color: #fff;
+    box-shadow: 0 0 13px #b1b1b115;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    padding: 10px;
+
+    position: relative;
+
+    z-index: 30000;
+    /* pointer-events: none;
+    user-select: none; */
+}
+
+/* Fim page 8 */

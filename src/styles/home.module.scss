@@ -1,0 +1,67 @@
+/* Página Index */
+.test {
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 20px;
+}
+
+.test h1 {
+    margin: 0;
+    text-align: start;
+    margin-left: 10vh;
+}
+
+.test h2 {
+    margin: 0;
+    text-align: start;
+    margin-left: 10vh;
+
+    border-bottom: 5px solid rgba(0, 255, 115, 0.6);
+    width: fit-content;
+    line-height: 1.9;
+    color: rgb(63, 63, 63);
+}
+
+.pages {
+    position: relative;
+    max-width: 250px;
+    height: fit-content;
+
+    border-radius: 10px;
+    overflow: hidden;
+
+    margin: auto;
+    margin-top: 100px;
+
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.112);
+
+    li {
+        position: relative;
+        list-style: none;
+        width: 100%;
+        display: flex;
+        
+        a {
+            position: relative;
+            text-decoration: none;
+
+            width: 100%;
+            height: 100%;
+
+            padding: 15px;
+
+            background-color: var(--g0);
+            color: rgb(58, 75, 137);
+
+            &:hover{
+                background-color: var(--g1);
+            }
+        }
+    }
+}
