@@ -2,34 +2,33 @@ import styles from '../styles/page7.module.scss'
 
 function Page7() {
     
-    function criar() {
-        var cartao = document.querySelectorAll(`${styles.cartao}`)
-        Array.from(cartao).map(function (elemento, indice, arrayBase) {
+    // function criar() {
+    //     var cartao = document.querySelectorAll(`${styles.cartao}`)
+    //     Array.from(cartao).map(function (elemento, indice, arrayBase) {
 
-            const conteudo = elemento.querySelector('h3').textContent;
+    //         const conteudo = elemento.querySelector('h3').textContent;
 
-            const cor = getComputedStyle(elemento).backgroundColor
+    //         const cor = getComputedStyle(elemento).backgroundColor
 
-            const passw = document.getElementById('pass')
+    //         const passw = document.getElementById('pass')
 
-            const num = document.querySelector(`${styles.num}`).value
+    //         const num = document.querySelector(`${styles.num}`).value
 
-            console.log({ conteudo: conteudo, cor: cor, font: getComputedStyle(elemento).fontFamily, password: passw.value, numero: num })
+    //         console.log({ conteudo: conteudo, cor: cor, font: getComputedStyle(elemento).fontFamily, password: passw.value, numero: num })
 
-        })
+    //     })
 
-        var p = document.getElementById('p')
-        var q = document.getElementById('q')
+    //     var p = document.getElementById('p')
+    //     var q = document.getElementById('q')
 
-        p.innerHTML = Array.from(cartao).length + "Cartões encontrados!"
+    //     p.innerHTML = Array.from(cartao).length + "Cartões encontrados!"
 
-        var passw = document.getElementById('pass')
+    //     var passw = document.getElementById('pass')
 
-        const num = document.querySelector(`${styles.num}`)
+    //     const num = document.querySelector(`${styles.num}`)
 
-        q.innerHTML = "não digite senhas em qualquer lugar! Você digitou: " + passw.value + "<br> Número escolhido: " + num.value
-
-    }
+    //     q.innerHTML = "não digite senhas em qualquer lugar! Você digitou: " + passw.value + "<br> Número escolhido: " + num.value
+    // }
     return (
         <div className={styles.content} id="content">
             <div className={styles.cartao}>
@@ -41,7 +40,8 @@ function Page7() {
                     </fieldset>
                 </form>
             </div>
-            <button className={styles.btnS} type="button" onClick={() => criar()}>Clique</button>
+            <button className={styles.btnS} type="button">Clique</button>
+            {/* <button className={styles.btnS} type="button" onClick={() => criar()}>Clique</button> */}
             <p id="p"></p>
             <p id="q"></p>
         </div>

@@ -5,39 +5,39 @@ function Page8() {
     const frutas = ['pera', 'maçã', 'banana', 'abacate', 'pêssego', 'banana', 'uva', 'pera', 'pera', 'maçã', 'pera', 'abacate', 'melancia']
     const biscoitos = ['povilho', 'creme', 'social', 'negresco', 'nesfit']
 
-    function mecanism() {
-        var search = document.querySelector('.searchHere').value
-        var resultado = document.querySelector('.result')
+    // function mecanism() {
+    //     var search = document.querySelector('.searchHere').value
+    //     var resultado = document.querySelector('.result')
 
-        var x = document.getElementsByClassName('box-result'); //elemnto pai                           
-        var content = '';
+    //     var x = document.getElementsByClassName('box-result'); //elemnto pai                           
+    //     var content = '';
 
-        if ((frutas.filter(frutas => frutas === search).length) <= 0) {
-            var texto = document.createTextNode(`nada encontrado`)
-            resultado.textContent = 'digite algo, por favor'
-        }
-        else {
-            var texto = document.createTextNode(`${frutas.filter(frutas => frutas === search)}`)
-            resultado.textContent = (frutas.filter(frutas => frutas === search).length) + (` ${search.toUpperCase()}S ENCONTRADOS`)
-        }
+    //     if ((frutas.filter(frutas => frutas === search).length) <= 0) {
+    //         var texto = document.createTextNode(`nada encontrado`)
+    //         resultado.textContent = 'digite algo, por favor'
+    //     }
+    //     else {
+    //         var texto = document.createTextNode(`${frutas.filter(frutas => frutas === search)}`)
+    //         resultado.textContent = (frutas.filter(frutas => frutas === search).length) + (` ${search.toUpperCase()}S ENCONTRADOS`)
+    //     }
 
-        var div = document.createElement('div');
-        div.setAttribute('class', 'card');
-        div.innerHTML = content;
+    //     var div = document.createElement('div');
+    //     div.setAttribute('class', 'card');
+    //     div.innerHTML = content;
 
-        x[0].appendChild(div);
-        div.appendChild(texto)
-    }
+    //     x[0].appendChild(div);
+    //     div.appendChild(texto)
+    // }
 
-    function clear() {
-        var cards = document.querySelectorAll('.card')
+    // function clear() {
+    //     var cards = document.querySelectorAll('.card')
 
-        alert(cards.length, 'ola')
+    //     alert(cards.length, 'ola')
 
-        for (let i = 0; i < cards.length; i++) {
-            cards[i].remove()
-        }
-    }
+    //     for (let i = 0; i < cards.length; i++) {
+    //         cards[i].remove()
+    //     }
+    // }
 
     // document.querySelector('.array').textContent = frutas
     // document.querySelector('.array2').textContent = biscoitos
@@ -60,7 +60,8 @@ function Page8() {
                 <br />
                 <p>Search fruits</p>
                 <input type="text" placeholder="Search here" className={styles.searchHere} />
-                <button onClick={() => mecanism()}> Search</button>
+                {/* <button onClick={() => mecanism()}> Search</button> */}
+                <button>Search</button>
                 <button onClick={() => {
                     var cards = document.querySelectorAll('.card')
                     for (let i = 0; i < cards.length; i++) {
