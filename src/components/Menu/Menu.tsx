@@ -2,7 +2,6 @@ import styles from './Menu.module.scss'
 
 function Menu() {
     return (
-        <div>
         <div className={styles.menu}>
             <ul>
                 <li><a data-ico="" href="/">Home</a></li>
@@ -16,7 +15,6 @@ function Menu() {
                 <li><a href="/page8">page8</a></li>
                 <li><a href="/page9">page9</a></li>
             </ul>
-        </div>
         </div>
     )
 }

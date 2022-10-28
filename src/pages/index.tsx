@@ -2,7 +2,7 @@ import styles from '../styles/home.module.scss'
 
 function Home() {
     return (
-        <>
+        <div className={styles.container}>
             <div className={styles.test}>
                 <h1>Treinando CSS e JS 😎</h1>
             </div>
@@ -19,7 +19,7 @@ function Home() {
                 <li><a href="/page9">Página 9 | Figma</a></li>
             </ul>
             <div className='line' />
-        </>
+        </div>
     )
 }
 

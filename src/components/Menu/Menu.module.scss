@@ -3,9 +3,12 @@
 
 
 .menu{
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
+    background-color: rgb(62, 26, 146);
+    height: 100vh;
+    width: fit-content;
 
     z-index: 1000;
 }
@@ -13,8 +16,6 @@
 .menu ul{
     list-style: none;
 
-    border-radius: 10px;
-    margin: 10px;
     overflow: hidden;
     transition: 0.5s;
 
@@ -22,7 +23,7 @@
 }
 
 .menu ul li{
-    width: 130px;
+    width: 170px;
     height: fit-content;
     position: relative;
 }

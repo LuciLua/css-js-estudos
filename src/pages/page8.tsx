@@ -50,38 +50,28 @@ function Page8() {
 
     return (
 
-        <div className={styles.callback}>
-            <div className={styles.arrays}>
-                <p>Fruits: </p><span className={styles.array}></span>
-                <p>Cookies: </p><span className={styles.array2}></span>
-            </div>
-            <div className="line"></div>
-            <div className={styles.boxin2}>
-                <br />
-                <p>Search fruits</p>
-                <input type="text" placeholder="Search here" className={styles.searchHere} />
-                {/* <button onClick={() => mecanism()}> Search</button> */}
-                <button>Search</button>
-                <button onClick={() => {
-                    var cards = document.querySelectorAll('.card')
-                    for (let i = 0; i < cards.length; i++) {
-                        cards[i].remove()
-                    }
-                }}>Clear</button>
-                <span className={styles.result}></span>
-                <div className={styles.outResult}>
-                    <div className={styles.boxresult}>
+        <div className={styles.container}>
+            <div className={styles.fruits}>
+                <div className={styles.fruit}>
+                    <div className={styles.name}>Uva</div>
+                    <div className={styles.percent}>
+                        <div className={styles.value}>70%</div>
                     </div>
                 </div>
-                <div className="line"></div>
-                <p>map:</p><span className={styles.map}></span>
-                <p>filter 1:</p><span className={styles.filter}></span>
-                <p>filter 2:</p><span className={styles.filter2}></span>
-                <p>filter 3:</p><span className={styles.filter3}></span>
-                <p>filter 4:</p><span className={styles.filter4}></span>
-                <p>find:</p><span className={styles.find}></span>
-                <br />
+                <div className={styles.fruit}>
+                    <div className={styles.name}>Maçã</div>
+                    <div className={styles.percent}>
+                        <div className={styles.value}>20%</div>
+                    </div>
+                </div>
+                <div className={styles.fruit}>
+                    <div className={styles.name}>Banana</div>
+                    <div className={styles.percent}>
+                        <div className={styles.value}>81%</div>
+                    </div>
+                </div>
             </div>
+            <input type="text" placeholder='fruit' />
         </div>
     )
 }

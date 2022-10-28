@@ -3,10 +3,10 @@ import '../styles/globals.scss'
 
 function App({ Component, pageProps }) {
     return (
-        <>
-        <Menu />
-        <Component {...pageProps} />
-        </>
+        <div className="wrap">
+            <Menu />
+            <Component {...pageProps} />
+        </div>
     )
 }
 

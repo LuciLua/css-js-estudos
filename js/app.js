@@ -1,9 +1,3 @@
-
-
-
-
-
-
 // const lista = ["Canetas", "Estojos", "mochilas", "tesouras", "cadernos"]
 
 // function listar(nome, indice){
