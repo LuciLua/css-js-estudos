@@ -1,72 +1,66 @@
-
 /* Page 1 */
-
-.flexbox{
+.flexbox {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 
-    margin-left: auto;
-    margin-right: auto;
-
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px auto;
 
     font-family: 'Lexend', sans-serif;
 
     background-color: rgb(255, 255, 255);
 
-    width: clamp(80px, 90% , 900px);
-    min-height: 440px;
-    max-height: 520px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.283);
+    height: fit-content;
+    width: clamp(80px, 90%, 900px);
+
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.103);
 
     border-radius: 5px;
 
     overflow: hidden;
-
     position: relative;
 
     animation: fadeInPages 0.5s linear;
+
 }
 
 
-.flexbox .left{
-    position: absolute;
-    width: 40%;
+.flexbox .left {
+    position: relative;
+    min-height: 100px;
+    width: 100%;
     height: 100%;
-
-    right: 60%;
 
     overflow: hidden;
 
     border-radius: 5px;
-    
+
     background-image: url('/tom-roberts-eAqwgnC4iEM-unsplash.jpg');
 
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
 
-    background-size: 800px;
+    filter: brightness(1.5);
 
-    filter:  brightness(1.5);
 }
 
-.flexbox .right{
-    width: 60%; 
+.flexbox .right {
+    width: 100%;
     height: 100%;
     position: relative;
-    
+
     margin-left: auto;
 
     border-radius: 5px;
+
 }
 
-.flexbox .right .top{
+.flexbox .right .top {
     width: 100%;
     height: 55px;
-    
+
     top: 0;
     position: relative;
 
@@ -75,7 +69,7 @@
     align-items: center;
 }
 
-.flexbox .right .top ul{
+.flexbox .right .top ul {
     list-style: none;
     display: flex;
 
@@ -85,42 +79,42 @@
     position: relative;
 }
 
-.flexbox .right .top ul li{
+.flexbox .right .top ul li {
     margin: auto;
     background-color: rgb(255, 255, 255);
-    
+
     color: rgb(254, 156, 134);
     font-size: 12px;
-    
+
     height: 100%;
     width: 30%;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     position: relative;
 }
 
-.flexbox .right .top ul li:first-of-type{
+.flexbox .right .top ul li:first-of-type {
     border-bottom: rgb(255, 136, 109) 2px solid;
 }
 
 
-.flexbox .right .bottom{
+.flexbox .right .bottom {
     display: flex;
     align-items: center;
     justify-content: center;
 
     flex-direction: column;
 
-    
+
     width: 100%;
     height: calc(100% - 55px);
     padding: 20px 20px 20px 20px;
 }
 
-.flexbox .right .bottom h1{
+.flexbox .right .bottom h1 {
     color: rgb(255, 98, 0);
 
     font-size: 20px;
@@ -133,7 +127,7 @@
     margin: 15px
 }
 
-.flexbox .right .bottom p{
+.flexbox .right .bottom p {
     font-size: 11px;
     color: rgb(159, 159, 159);
 
@@ -142,7 +136,7 @@
     line-height: 1.5;
 }
 
-.flexbox .right .bottom .cards{
+.flexbox .right .bottom .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
@@ -155,9 +149,9 @@
     margin: 20px;
 }
 
-.flexbox .right .bottom .cards .card{
+.flexbox .right .bottom .cards .card {
     border: 1px solid rgba(114, 114, 114, 0.256);
-    
+
     width: 130px;
     height: 80px;
 
@@ -175,18 +169,18 @@
 
 }
 
-.flexbox .right .bottom .cards .card h1{
+.flexbox .right .bottom .cards .card h1 {
     color: rgb(255, 98, 0);
     font-size: 18px;
-    
+
     text-align: center;
 }
 
-.flexbox .right .bottom .cards .card p{
+.flexbox .right .bottom .cards .card p {
     color: rgb(137, 137, 137);
 }
 
-.flexbox .right .bottom button{
+.flexbox .right .bottom button {
     background-color: rgb(255, 98, 0);
     color: #fff;
     font-weight: 600;
