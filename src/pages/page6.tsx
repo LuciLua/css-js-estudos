@@ -30,17 +30,15 @@ function Page6() {
 
     return (
         <div className={styles.callback}>
-            <div className={styles.backgroundPage8}>
-                <p>tente lucilua81 ou lolalola81</p>
-                <p>Falhou</p>
-                <br />
-                <div className={styles.boxin}>
-                    <input type="text" name="" id="seunome" placeholder="seuNome" />
-                    {/* <input type="text" name="" id="seunome" placeholder="seuNome"  onInput={() => teste()} /> */}
-                    <input type="text" name="" id="seunomeresult" placeholder="seuNomeResult" value="" />
-                </div>
-                <br />
+            <p>tente lucilua81 ou lolalola81</p>
+            <p>Falhou</p>
+            <br />
+            <div className={styles.boxin}>
+                <input type="text" name="" id="seunome" placeholder="seuNome" />
+                {/* <input type="text" name="" id="seunome" placeholder="seuNome"  onInput={() => teste()} /> */}
+                <input type="text" name="" id="seunomeresult" placeholder="seuNomeResult" value="" />
             </div>
+            <br />
         </div>
 
     )

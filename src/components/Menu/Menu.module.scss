@@ -1,68 +1,132 @@
-
 /* menu */
-
-
-.menu{
+.menu {
     position: relative;
     top: 0;
     left: 0;
     background-color: rgb(62, 26, 146);
+
     height: 100vh;
     width: fit-content;
-
     z-index: 1000;
+
+    .close{
+
+        display: none;
+        
+        width: fit-content;
+        position: absolute;
+        bottom: 0;
+
+        color: rgba(255, 255, 255, 0.452);
+        font-size: 13px;
+
+        text-align: center;
+        margin: 10px;
+    }
+
+    ul {
+        list-style: none;
+
+        overflow: hidden;
+        transition: 0.5s;
+
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.345);
+
+
+        li {
+            width: 170px;
+            height: fit-content;
+            position: relative;
+
+            a {
+                text-decoration: none;
+                font-family: Arial;
+
+                background-color: rgb(100, 68, 215);
+                color: var(--g0);
+
+                padding: 15px;
+
+                display: flex;
+                align-items: center;
+                position: relative;
+
+                &::before {
+                    content: url('/ico.svg');
+                    filter: invert(1);
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 10px;
+                
+                    display: flex;
+                    padding: 2px;
+                    justify-content: center;
+                }
+
+                &:hover {
+                    color: rgb(100, 68, 215);
+                    background-color: rgb(255, 255, 255);
+
+                    &::before {
+                        filter: invert(0);
+                        content: url('/ico.svg');
+                    }
+                }
+            }
+        }
+    }
 }
 
-.menu ul{
-    list-style: none;
+@media (max-width: 600px) {
+    .menu {
+        position: absolute;
+        width: 10px;
+        cursor: pointer;
+        background-color: rgb(63, 84, 190);
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.426);
+        overflow: hidden;
 
-    overflow: hidden;
-    transition: 0.5s;
+        .close{
+            display: flex;
+        }
 
-    box-shadow:  0 0 12px rgba(0, 0, 0, 0.345);
+        ul {
+            box-shadow: none;
+
+            li {
+                pointer-events: none;
+
+                a {
+                    background-color: rgb(63, 84, 190);
+                }
+            }
+        }
+
+    }
+
+    .menu.active {
+        width: fit-content;
+        cursor: default;
+        background-color: rgb(62, 26, 146);
+
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.226);
+
+
+        ul {
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.345);
+
+            li {
+                pointer-events: all;
+
+                a {
+                    background-color: rgb(100, 68, 215);
+
+                    &:hover {
+                        color: rgb(100, 68, 215);
+                        background-color: rgb(255, 255, 255);
+                    }
+                }
+            }
+        }
+    }
 }
-
-.menu ul li{
-    width: 170px;
-    height: fit-content;
-    position: relative;
-}
-
-.menu ul li a:hover{
-    color: rgb(100, 68, 215);
-    background-color: rgb(255, 255, 255);
-}
-
-.menu ul li a:hover::before{
-    filter: invert(0);
-    content:url('/ico.svg');
-}
-
-.menu ul li a{
-    text-decoration: none;
-    font-family: Arial;
-
-    background-color: rgb(100, 68, 215);
-    color: var(--g0);
-
-    padding: 15px;
-
-    display: flex;
-    align-items: center;
-    position: relative;
-
-}
-
-.menu ul li a::before{
-    content:url('/ico.svg');
-    filter: invert(1);
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-
-    display: flex;
-    padding: 2px;
-    justify-content: center;
-}
-
-/* fim menu */
