@@ -22,6 +22,7 @@ function Menu() {
                 <li><a href="/page7">page7</a></li>
                 <li><a href="/page8">page8</a></li>
                 <li><a href="/page9">page9</a></li>
+                <li><a href="/page10">page10</a></li>
             </ul>
             <div className={styles.close}>Clique em qualquer area para fechar ❌</div>
         </div>

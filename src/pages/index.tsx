@@ -17,6 +17,7 @@ function Home() {
                 <li><a href="/page7">Página 7 | Card JS</a></li>
                 <li><a href="/page8">Página 8 | Array</a></li>
                 <li><a href="/page9">Página 9 | Figma</a></li>
+                <li><a href="/page10">Página 10 | vh vs dvh</a></li>
             </ul>
             <div className='line' />
         </div>
